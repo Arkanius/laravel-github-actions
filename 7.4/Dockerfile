@@ -1,13 +1,14 @@
 FROM ubuntu:18.04
-LABEL maintainer="Luis Dalmolin <luis@kirschbaumdevelopment.com>"
+LABEL maintainer="Victor Gazotti <vgazotti@gmail.com>"
 ARG DEBIAN_FRONTEND=noninteractive
 
 ENV GOSS_VERSION="0.3.6"
 
-RUN apt-get update && apt-get install -y software-properties-common curl
-RUN add-apt-repository ppa:ondrej/php -y
-RUN apt-get update -y
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y software-properties-common curl \
+&& apt-get install xvfb libfontconfig wkhtmltopdf \
+&& add-apt-repository ppa:ondrej/php -y \
+&& apt-get update -y \
+&& apt-get install -y \
     unzip  \
     php7.4-cli \
     php7.4-gd \
@@ -34,21 +35,11 @@ RUN apt-get install -y \
 ENV COMPOSER_HOME=/composer
 ENV PATH=./vendor/bin:/composer/vendor/bin:/root/.yarn/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV COMPOSER_ALLOW_SUPERUSER=1
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-# Install hirak/prestissimo package
-RUN composer global require hirak/prestissimo
-
-# mysql client
-RUN apt-get install -y mysql-client
-
-# git
-RUN apt-get install -y git
-
-# node and yarn
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
-RUN apt-get install -y nodejs
-RUN npm install -g yarn
-
-# goss
-RUN curl -fsSL https://goss.rocks/install | GOSS_VER=v${GOSS_VERSION} sh
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \ 
+&& composer global require hirak/prestissimo \
+&& apt-get install -y mysql-client \
+&& apt-get install -y git \
+&& curl -sL https://deb.nodesource.com/setup_9.x | bash - \ 
+&& apt-get install -y nodejs \ 
+&& npm install -g yarn \
+&& curl -fsSL https://goss.rocks/install | GOSS_VER=v${GOSS_VERSION} sh
