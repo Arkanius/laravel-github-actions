@@ -10,10 +10,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Publish to Registry
+    - name: Publish to DockerHub
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: kirschbaumdevelopment/laravel-test-runner
+        name: vtrgomes/github-actions-laravel
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         workdir: 7.4
