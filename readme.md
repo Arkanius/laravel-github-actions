@@ -1,9 +1,9 @@
 # Docker Container for running Laravel tests
 
-[![Docker Badge](https://img.shields.io/docker/pulls/kirschbaumdevelopment/laravel-test-runner)](https://hub.docker.com/r/kirschbaumdevelopment/laravel-test-runner/)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://cloud.docker.com/u/kirschbaumdevelopment/repository/docker/kirschbaumdevelopment/laravel-test-runner)
+[![Docker Badge](https://img.shields.io/docker/pulls/vtrgomes/github-actions-laravel)](https://img.shields.io/docker/pulls/vtrgomes/github-actions-laravel/)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://hub.docker.com/repository/docker/vtrgomes/github-actions-laravel)
 
-This is a [docker container](https://cloud.docker.com/u/kirschbaumdevelopment/repository/docker/kirschbaumdevelopment/laravel-test-runner) for running Laravel tests in Github actions.
+This is a [docker container](https://hub.docker.com/repository/docker/vtrgomes/github-actions-laravel) for running Laravel tests in Github actions.
 
 | PHP version | Link | Status | Container Tag |
 | ----------- | ---- | ------ | ------------- |
@@ -13,9 +13,6 @@ This is a [docker container](https://cloud.docker.com/u/kirschbaumdevelopment/re
 
 You may want to check [this blog post](https://kirschbaumdevelopment.com/news-articles/using-github-actions-to-setup-ci-cd-with-laravel-and-mysql) on how to use this container to run your Laravel tests with Github Actions.
 
-## Issues
-
-If you have any issues running your tests with this container, please open an issue or send a pull request.
 
 ## Credits
 
