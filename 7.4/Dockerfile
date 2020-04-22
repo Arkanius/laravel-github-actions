@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV GOSS_VERSION="0.3.6"
 
 RUN apt-get update && apt-get install -y software-properties-common curl \
-&& apt-get install xvfb libfontconfig wkhtmltopdf \
+&& apt-get install xvfb -y libfontconfig wkhtmltopdf \
 && add-apt-repository ppa:ondrej/php -y \
 && apt-get update -y \
 && apt-get install -y \
