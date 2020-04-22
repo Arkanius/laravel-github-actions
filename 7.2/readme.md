@@ -7,19 +7,19 @@ Docker Container with PHP 7.2 and extensions to be compatible with most Laravel 
 **Build**:
 
 ```
-docker build --pull -t kirschbaumdevelopment/laravel-test-runner .
+docker build --pull -t vtrgomes/github-actions-laravel .
 ```
 
 **Tag**:
 
 ```
-docker tag kirschbaumdevelopment/laravel-test-runner:latest kirschbaumdevelopment/laravel-test-runner:7.2
+docker tag vtrgomes/github-actions-laravel:latest vtrgomes/github-actions-laravel:7.2
 ```
 
 **Push**:
 
 ```
-docker push kirschbaumdevelopment/laravel-test-runner:7.2
+docker push vtrgomes/github-actions-laravel:7.2
 ```
 
 ## Credits
