@@ -41,7 +41,8 @@ RUN apt-get update && apt-get install -y software-properties-common curl \
     fontconfig \
 && wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz \
 && tar xvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz \ 
-&& mv wkhtmltox/bin/wkhtmlto* /usr/local/bin 
+&& mv wkhtmltox/bin/wkhtmlto* /usr/local/bin \ 
+&& ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
 
 # composer
 ENV COMPOSER_HOME=/composer
