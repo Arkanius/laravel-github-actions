@@ -5,10 +5,11 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV GOSS_VERSION="0.3.6"
 
 RUN apt-get update && apt-get install -y software-properties-common curl \
-&& apt-get install xvfb -y libfontconfig wkhtmltopdf \
 && add-apt-repository ppa:ondrej/php -y \
 && apt-get update -y \
 && apt-get install -y \
+    libfontconfig \
+    wget \
     unzip  \
     php7.4-cli \
     php7.4-gd \
@@ -29,7 +30,18 @@ RUN apt-get update && apt-get install -y software-properties-common curl \
     php7.4-intl \
     php7.4-imagick \
     php7.4-redis \
-    php7.4-imap
+    php7.4-imap \ 
+    openssl \
+    libssl-dev \ 
+    libxrender-dev \ 
+    libx11-dev \ 
+    libxext-dev \ 
+    libfontconfig1-dev \ 
+    libfreetype6-dev \ 
+    fontconfig \
+&& wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz \
+&& tar xvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz \ 
+&& mv wkhtmltox/bin/wkhtmlto* /usr/local/bin 
 
 # composer
 ENV COMPOSER_HOME=/composer
