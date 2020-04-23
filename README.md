@@ -28,7 +28,7 @@ Checkout this example to see how to run a simple laravel pipeline. Create a file
 
 **.github/workflows/tests.yml**
 
-```
+```yaml
 name: Unit Tests
 on: [push, pull_request, release]
 jobs:
