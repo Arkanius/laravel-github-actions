@@ -7,9 +7,9 @@ This is a [docker container](https://hub.docker.com/repository/docker/vtrgomes/g
 
 | PHP version | Link | Status | Container Tag |
 | ----------- | ---- | ------ | ------------- |
-| 7.4 | [🔗](https://github.com/kirschbaum-development/laravel-test-runner-container/blob/master/7.4) | [![Actions Status](https://github.com/kirschbaum-development/laravel-test-runner-container/workflows/php-7.4-validate/badge.svg)](https://github.com/kirschbaum-development/laravel-test-runner-container/actions) | vtrgomes/github-actions-laravel:7.4 |
-| 7.3 | [🔗](https://github.com/kirschbaum-development/laravel-test-runner-container/blob/master/7.3) | [![Actions Status](https://github.com/kirschbaum-development/laravel-test-runner-container/workflows/php-7.3-validate/badge.svg)](https://github.com/kirschbaum-development/laravel-test-runner-container/actions) | vtrgomes/github-actions-laravel:7.3 |
-| 7.2 | [🔗](https://github.com/kirschbaum-development/laravel-test-runner-container/blob/master/7.2) | [![Actions Status](https://github.com/kirschbaum-development/laravel-test-runner-container/workflows/php-7.2-validate/badge.svg)](https://github.com/kirschbaum-development/laravel-test-runner-container/actions) | vtrgomes/github-actions-laravel:7.2 |
+| 7.4 | [🔗](https://github.com/Arkanius/laravel-test-runner-container/blob/master/7.4/Dockerfile) | [![Actions Status](https://github.com/Arkanius/laravel-test-runner-container/php-7.4-validate/badge.svg)](https://github.com/Ark4nius/laravel-test-runner-container/actions) | vtrgomes/github-actions-laravel:7.4 |
+| 7.3 | [🔗](https://github.com/Arkanius/laravel-test-runner-container/blob/master/7.3) | [![Actions Status](https://github.com/Arkanius/laravel-test-runner-container/php-7.3-validate/badge.svg)](https://github.com/Ark4nius/laravel-test-runner-container/actions) | vtrgomes/github-actions-laravel:7.3 |
+| 7.2 | [🔗](https://github.com/Arkanius/laravel-test-runner-container/blob/master/master/7.2) | [![Actions Status](https://github.com/Arkanius/laravel-test-runner-container/php-7.2-validate/badge.svg)](https://github.com/Ark4nius/laravel-test-runner-container/actions) | vtrgomes/github-actions-laravel:7.2 |
 
 
 ## Credits
