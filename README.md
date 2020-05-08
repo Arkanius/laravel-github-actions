@@ -3,7 +3,6 @@
 [![Docker Badge](https://img.shields.io/docker/pulls/vtrgomes/github-actions-laravel)](https://img.shields.io/docker/pulls/vtrgomes/github-actions-laravel/)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://hub.docker.com/repository/docker/vtrgomes/github-actions-laravel)
 
-This is a [docker container](https://hub.docker.com/repository/docker/vtrgomes/github-actions-laravel) for running Laravel tests in Github actions.
 
 | PHP version | Link | Container Tag |
 | ----------- | ---- |  ------------- |
