@@ -6,6 +6,7 @@
 
 | PHP version | Link | Container Tag |
 | ----------- | ---- |  ------------- |
+| 8.2 | [🔗](https://github.com/Arkanius/laravel-test-runner-container/blob/master/8.2/Dockerfile) | vtrgomes/github-actions-laravel:8.2 |
 | 7.4 | [🔗](https://github.com/Arkanius/laravel-test-runner-container/blob/master/7.4/Dockerfile) | vtrgomes/github-actions-laravel:7.4 |
 | 7.3 | [🔗](https://github.com/Arkanius/laravel-test-runner-container/blob/master/7.3) | vtrgomes/github-actions-laravel:7.3 |
 | 7.2 | [🔗](https://github.com/Arkanius/laravel-test-runner-container/blob/master/master/7.2) | vtrgomes/github-actions-laravel:7.2 |
@@ -34,7 +35,7 @@ jobs:
   PhpUnit:
     runs-on: ubuntu-latest
     container:
-      image: vtrgomes/github-actions-laravel:7.4
+      image: vtrgomes/github-actions-laravel:latest
 
     services:
       mysql:
