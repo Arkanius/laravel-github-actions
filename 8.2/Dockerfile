@@ -5,6 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y software-properties-common curl \
 && add-apt-repository ppa:ondrej/php -y \
 && apt-get update -y && apt install -y libfontconfig \
+    sudo \
     wget \
     unzip  \
     php8.2 \
